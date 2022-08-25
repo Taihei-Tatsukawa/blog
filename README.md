@@ -1,4 +1,4 @@
-## 『作って学ぶ　 Next.js/React 　 Web サイト構築』サポートサイトの学習用
+## 『作って学ぶ　 Next.js/React 　 Web サイト構築』の学習用
 
 https://book.mynavi.jp/supportsite/detail/9784839980177.html
 
