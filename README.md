@@ -1,3 +1,7 @@
+## 『作って学ぶ　 Next.js/React 　 Web サイト構築』サポートサイトの学習用
+
+https://book.mynavi.jp/supportsite/detail/9784839980177.html
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
