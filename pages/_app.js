@@ -21,6 +21,9 @@ function MyApp({ Component, pageProps }) {
       router.events.off("routerChangeComplete", handleRouteChange);
     };
   }, [router.events]);
+
+  const getLayout = Component.getLayout || ((page) => page);
+
   return (
     <>
       <Script
@@ -32,7 +35,7 @@ function MyApp({ Component, pageProps }) {
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
-            window.dataLayer = widow.dataLayer || [];
+            window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
@@ -40,9 +43,7 @@ function MyApp({ Component, pageProps }) {
           `,
         }}
       />
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <Layout>{getLayout(<Component {...pageProps} />)}</Layout>
     </>
   );
 }
